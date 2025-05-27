@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 15px;
+  padding: 15px;
+  background-color: #c3cafc;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.search-input {
+  padding: 18px;
+  font-size: 18px;
+  width: 400px;
+  margin-right: 10px;
+  margin-left: 100px;
+  border-radius: 20px;
+  border: solid 2px black;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #9500ff;
+  color: white;
+  border: solid 2px rgb(5, 0, 144);
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.search-button:hover {
+  background-color: #6e04ba;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+} 
 
 .card {
-  padding: 2em;
+  border: 1px solid #2018c6;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.card-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card-artist {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-audio {
+  width: 100%;
+  margin-top: 10px;
 }
